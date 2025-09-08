@@ -23,7 +23,7 @@ class Aada < Formula
     # The ZIP produced by releases contains a single file (binary) named "aada_mac_*" for mac
     # The repo's signing step re-zips into <binary>.zip. We fetch the zip and just extract the binary.
     ohai "Extracting binary from zip"
-    safe_system "unzip", "-p", cached_download, "aada"}", out: "aada"
+    safe_system "unzip", "-p", cached_download, "aada", out: "aada"
     bin.install "aada"
   end
 

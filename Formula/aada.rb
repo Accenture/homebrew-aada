@@ -1,7 +1,7 @@
 class Aada < Formula
   desc "Accenture Active Directory Authenticator (AWS credential_process helper)"
   homepage "https://github.com/Accenture/aada"
-  version "1.3.1"
+  version "1.3.2"
 
   # NOTE: Update the url and sha256 to match the macOS ARM64 artifact when you cut a new release.
   # The build system produces separate ZIPs per platform, named like:
@@ -9,12 +9,12 @@ class Aada < Formula
   # Prefer arm64 for Apple Silicon. If you need Intel, change to aada_mac_x64.zip and sha256.
   on_arm do
     url "https://github.com/Accenture/aada/releases/download/v#{version}/aada_mac_arm64.zip", using: :nounzip
-    sha256 "951f4a3e76960216a61e2493134e389cbc148091c0be1b3453658a888467c33f"
+    sha256 "8e607cceb1b0626a576132a3720cc3925d22bbadb7ec4cf834d8186aa3201763"
   end
 
   on_intel do
     url "https://github.com/Accenture/aada/releases/download/v#{version}/aada_mac_x64.zip", using: :nounzip
-    sha256 "272d9b44f4fa73f83380acc68d7a2337216c933c30f50484f527a1a18b583276"
+    sha256 "74b31dc9b8cf9b317d56da528dcea3721abb4720ccf2f3051eeed44ef0401cbd"
   end
 
   depends_on :macos

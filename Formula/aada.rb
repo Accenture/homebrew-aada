@@ -9,12 +9,12 @@ class Aada < Formula
   # Prefer arm64 for Apple Silicon. If you need Intel, change to aada_mac_x64.zip and sha256.
   on_arm do
     url "https://github.com/Accenture/aada/releases/download/v#{version}/aada_mac_arm64.zip", using: :nounzip
-    sha256 "3852d41e0c4eab662d2dbe0da06078a6408584f1ea17836dd174e249bf67d68e"
+    sha256 "1999e8cd3391177fe02893754c72e94e691b765383fb40c97e63abcde7066ee0"
   end
 
   on_intel do
     url "https://github.com/Accenture/aada/releases/download/v#{version}/aada_mac_x64.zip", using: :nounzip
-    sha256 "bc439d530165b58a6656831180f3779dab7abd4a1e0c6ff81727353c01df66c8"
+    sha256 "45734929b0d971dacb8f63e136044f3605d867d8733b3597fc967bf3a283fb21"
   end
 
   depends_on :macos

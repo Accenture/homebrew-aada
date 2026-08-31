@@ -1,7 +1,7 @@
 class Aada < Formula
   desc "Accenture Active Directory Authenticator (AWS credential_process helper)"
   homepage "https://github.com/Accenture/aada"
-  version "1.3.3"
+  version "1.3.4"
 
   # NOTE: Update the url and sha256 to match the macOS ARM64 artifact when you cut a new release.
   # The build system produces separate ZIPs per platform, named like:
